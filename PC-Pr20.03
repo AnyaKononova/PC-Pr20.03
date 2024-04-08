@@ -30,6 +30,12 @@ int main(void) {
     cv::imshow("negative", negative);
     cv::imshow("contour", contour);
 
+    cv::imwrite("original.jpg", image);
+    cv::imwrite("gray.jpg", grayScale);
+    cv::imwrite("sepia.jpg", sepia);
+    cv::imwrite("negative.jpg", negative);
+    cv::imwrite("contour.jpg", contour);
+
     cv::waitKey(0);
     return 0;
 }
